@@ -1,0 +1,13 @@
+# $schema: https://raw.githubusercontent.com/knative/func/refs/tags/v0.36.0/schema/func_yaml-schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/knative/func/refs/tags/v0.36.0/schema/func_yaml-schema.json
+specVersion: 0.36.0
+name: create
+runtime: python
+registry: sdf
+created: 2025-03-23T23:46:50.766663145+05:30
+build:
+  builder: pack
+run:
+  envs:
+  - name: APP_MODULE
+    value: func:application
